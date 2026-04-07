@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Gomez Vara | Product Designer</title>
+  <link rel="icon" type="image/svg+xml" href="assets/LogoJGV_favicon-32px.svg" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo" aria-label="Juan Gomez Vara">
+      <img class="logo-img logo-img--dark"  src="assets/logo-white.svg" alt="JGV" width="44" height="44" />
+      <img class="logo-img logo-img--light" src="assets/logo-dark.svg"  alt="JGV" width="44" height="44" />
+    </a>
+    <!-- Hamburger (mobile only) -->
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#work" class="nav-link magnetic"><span>Projects</span></a>
+        <a href="#about" class="nav-link magnetic"><span>About</span></a>
+      </div>
+      <a href="mailto:juangomezvara@gmail.com" class="btn-nav magnetic">
+        <span class="btn-text">Contact</span>
+        <span class="btn-arrow">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu-links">
+      <a href="#work"   class="mobile-nav-link">Projects</a>
+      <a href="#about"  class="mobile-nav-link">About</a>
+      <a href="#footer" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Interactive Dot Grid Canvas -->
+    <canvas class="dot-grid-canvas" id="dotGrid"></canvas>
+    <div class="hero-noise"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <div class="hero-line" data-animate="reveal" data-delay="100">
+          <span>Connecting dots</span>
+        </div>
+        <div class="hero-line" data-animate="reveal" data-delay="250">
+          <span>creates <span class="gradient-word">great products.</span></span>
+        </div>
+      </h1>
+
+      <p class="hero-sub" data-animate="fade-up" data-delay="450">
+        <strong>Product Designer</strong> based in Berlin bridging strategy, design and technology to create products <strong> that align</strong> <strong>business</strong>, <br><strong>enterprise</strong> and <strong>people</strong>.
+      </p>
+
+      <div class="hero-actions" data-animate="fade-up" data-delay="600">
+        <a href="mailto:juangomezvara@gmail.com" class="btn-primary magnetic">
+          <span class="btn-text">Contact</span>
+          <span class="btn-arrow">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M8 3l5 5-5 5M13 8H3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a href="#work" class="btn-ghost magnetic">View work</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects Section -->
+  <section class="work" id="work">
+    <div class="work-inner">
+      <div class="work-head" data-animate="fade-up">
+        <div>
+          <div class="work-eyebrow">
+            <span class="eyebrow-dot"></span>
+            Projects
+          </div>
+          <h2 class="work-title">
+            Designing products<br>
+            <em class="gradient-word">that connect dots.</em>
+          </h2>
+          <p class="work-subtitle">Product design work. From strategy to shipped.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Masonry Grid -->
+    <div class="projects-masonry">
+
+      <!-- Left column -->
+      <div class="projects-col">
+
+        <a href="project-micro-casing.html" class="project-card" data-animate="fade-up" data-delay="0">
+          <article>
+            <div class="project-card-img-wrap">
+              <img src="assets/Thumbnail-Micro-casing.webp" alt="Micro-casing-app — Strategic &amp; Clean" class="project-card-img" loading="lazy" decoding="async" width="600" height="600" />
+              <div class="project-card-overlay">
+                <span class="project-card-overlay-name">Micro-casing App</span>
+              </div>
+            </div>
+            <div class="project-card-meta-line">
+              <!-- <span>Micro-casing App</span>
+              <span class="meta-sep">•</span> -->
+              <span>Mobile App | Consulting | Gamification</span>
+            </div>
+            <p class="project-card-desc">From AI wireframes to developer-ready product in 2 weeks. 508%+ growth.</p>
+          </article>
+        </a>
+
+        <div class="project-card project-card--soon" data-animate="fade-up" data-delay="120">
+          <article>
+            <div class="project-card-img-wrap project-card-img-wrap--soon" style="background: linear-gradient(135deg, #0a0a0a 0%, #1c2341 50%, #2d3561 100%)">
+              <span class="project-card-soon-label">KLARO APP Coming soon ;)</span>
+              <div class="project-card-overlay">
+                <span class="project-card-overlay-name">Klaro App</span>
+              </div>
+            </div>
+            <div class="project-card-meta-line">
+              <!-- <span>Klaro App</span>
+              <span class="meta-sep">•</span> -->
+              <span>Mobile App | AI | Taxation</span>
+            </div>
+            <p class="project-card-desc">Intelligent automation with real fiscal knowledge to help Spanish speakers in Germany with their taxes.</p>
+          </article>
+        </div>
+
+      </div>
+
+      <!-- Right column — offset for stagger effect -->
+      <div class="projects-col projects-col--offset">
+
+        <div class="project-card project-card--soon" data-animate="fade-up" data-delay="60">
+          <article>
+            <div class="project-card-img-wrap project-card-img-wrap--soon" style="background: linear-gradient(135deg, #0d0d0d 0%, #1a0533 50%, #2d1b69 100%)">
+              <span class="project-card-soon-label">SUPPLY PRO Coming soon ;)</span>
+              <div class="project-card-overlay">
+                <span class="project-card-overlay-name">Supply Pro SaaS</span>
+              </div>
+            </div>
+            <div class="project-card-meta-line">
+              <!-- <span>Supply Pro SaaS</span>
+              <span class="meta-sep">•</span> -->
+              <span>Web App | B2B | Food Logistics</span>
+            </div>
+            <p class="project-card-desc">An automation solution that eliminates errors, speeds up operations, and recovers lost revenue in food logistics.</p>
+          </article>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-media" data-animate="fade-right">
+        <div class="about-photo-frame">
+          <img src="assets/juan-photo-new.png" alt="Juan Gomez Vara" class="about-photo-img" />
+        </div>
+      </div>
+
+      <div class="about-text" data-animate="fade-left">
+        <p class="section-label">About me</p>
+        <h2 class="about-title">
+          Finding the pattern<br />
+          <em>within the chaos.</em>
+        </h2>
+        <p class="about-bio">
+          I come from high-demand kitchens, where the head chef runs a system under pressure. Reading the entire service in real time, spotting where it's about to break before it does, keeping the team aligned. That speed, that drive, that commitment are built into how I work. It was through branding that I understood what a brand strategy really is: the same logic as the kitchen, just different ingredients. Typography, color, image combined with consistency to build trust and positioning.
+        </p>
+        <p class="about-bio">
+          Today I design digital products with that same philosophy. I step into complex systems, find the patterns that matter and connect business, users and technology. As fast and direct as the context demands.
+        </p>
+        <p class="about-bio">
+          Connecting those patterns isn't linear. It takes iteration, mistakes and the commitment to keep going until it clicks. That's what I do: find the pattern that connects all patterns and turn it into product.
+        </p>
+        <p class="about-bio" style="text-align: right; font-weight: 700;">Juan Gomez Vara</p>
+
+        <a href="mailto:juangomezvara@gmail.com" class="btn-primary magnetic">
+          <span class="btn-text">Contact</span>
+          <span class="btn-arrow">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Full-width scrolling skills strip -->
+    <!-- <div class="about-marquee-wrap">
+      <div class="about-marquee">
+        <span>Figma</span><span class="marquee-dot">·</span>
+        <span>Prototyping</span><span class="marquee-dot">·</span>
+        <span>Design Systems</span><span class="marquee-dot">·</span>
+        <span>UX Strategy</span><span class="marquee-dot">·</span>
+        <span>User Research</span><span class="marquee-dot">·</span>
+        <span>AI Implementation</span><span class="marquee-dot">·</span>
+        <span>Figma</span><span class="marquee-dot">·</span>
+        <span>Prototyping</span><span class="marquee-dot">·</span>
+        <span>Design Systems</span><span class="marquee-dot">·</span>
+        <span>UX Strategy</span><span class="marquee-dot">·</span>
+        <span>User Research</span><span class="marquee-dot">·</span>
+        <span>AI Implementation</span><span class="marquee-dot">·</span>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <canvas class="footer-dot-canvas" id="footerDotGrid"></canvas>
+    <div class="footer-top">
+      <div class="footer-cta" data-animate="fade-up">
+        <p class="footer-cta-label"><span class="eyebrow-dot"></span>Ready to work together?</p>
+        <h2 class="footer-cta-title">Let's connect dots<br /><span class="gradient-word">to create.</span></h2>
+        <a href="mailto:juangomezvara@gmail.com" class="btn-primary magnetic large">
+          <span class="btn-text">Contact</span>
+          <span class="btn-arrow">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer Graphic -->
+    <!-- <div class="footer-graphic" aria-hidden="true">
+      <span class="footer-big-text" data-text="DESIGN">DESIGN</span>
+    </div> -->
+
+    <div class="footer-bottom">
+      <div class="footer-info">
+        <span class="footer-logo">JGV<span class="logo-dot">.</span></span>
+        <span class="footer-copy">© 2026 Juan Gomez Vara, all rights reserved</span>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/juan-gomez-vara-0b409470/" target="_blank" rel="noopener" class="social-link magnetic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://medium.com/@juangomezvara" target="_blank" rel="noopener" class="social-link magnetic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.285 7.269a.733.733 0 0 0-.24-.619L2.275 4.517v-.32h5.498l4.25 9.32 3.736-9.32H21v.319l-1.515 1.453a.44.44 0 0 0-.168.425v10.666a.44.44 0 0 0 .168.425l1.479 1.453v.319h-7.436v-.319l1.53-1.489c.152-.15.152-.194.152-.424V8.401l-3.994 10.137h-.575L5.417 8.401v6.793c-.041.305.07.612.3.833l1.99 2.415v.32H2.003v-.32l1.99-2.415c.227-.22.333-.53.292-.832z"/></svg>
+          <span>Medium</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

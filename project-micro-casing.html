@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Micro-casing App — Juan Gomez Vara</title>
+  <link rel="icon" type="image/svg+xml" href="assets/LogoJGV_favicon-32px.svg" />
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo" aria-label="Juan Gomez Vara">
+      <img class="logo-img logo-img--dark"  src="assets/logo-white.svg" alt="JGV" width="44" height="44" />
+      <img class="logo-img logo-img--light" src="assets/logo-dark.svg"  alt="JGV" width="44" height="44" />
+    </a>
+    <!-- Hamburger (mobile only) -->
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html#work"  class="nav-link magnetic active"><span>Projects</span></a>
+        <a href="index.html#about" class="nav-link magnetic"><span>About</span></a>
+      </div>
+      <a href="mailto:juangomezvara@gmail.com" class="btn-nav magnetic">
+        <span class="btn-text">Contact</span>
+        <span class="btn-arrow">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-menu-links">
+      <a href="index.html#work"   class="mobile-nav-link">Projects</a>
+      <a href="index.html#about"  class="mobile-nav-link">About</a>
+      <a href="index.html#footer" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section class="cs-hero">
+    <canvas class="dot-grid-canvas" id="dotGrid" data-dot-spacing="28"></canvas>
+    <div class="hero-noise"></div>
+    <div class="cs-hero-inner">
+      <!-- <a href="index.html#work" class="cs-back" data-animate="fade-up" data-delay="0">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M7 4l-4 4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Back to projects
+      </a> -->
+
+      <div class="cs-tags" data-animate="fade-up" data-delay="80">
+        <span class="cs-tag">Mobile App</span>
+        <span class="cs-tag">EdTech</span>
+        <span class="cs-tag">UX Strategy</span>
+        <span class="cs-tag">Branding</span>
+        <span class="cs-tag">Gamification</span>
+      </div>
+
+      <h1 class="cs-title" data-animate="fade-up" data-delay="160">Micro-casing<br />App</h1>
+
+      <div class="cs-hero-meta" data-animate="fade-up" data-delay="240">
+        <div class="cs-hero-meta-item">
+          <span class="cs-hero-meta-label">Client</span>
+          <span class="cs-hero-meta-value">Cerebral Games</span>
+        </div>
+        <div class="cs-hero-meta-item">
+          <span class="cs-hero-meta-label">Founder</span>
+          <span class="cs-hero-meta-value">Shankar Ananth, formerly McKinsey and Bain</span>
+        </div>
+        <div class="cs-hero-meta-item">
+          <span class="cs-hero-meta-label">Role</span>
+          <span class="cs-hero-meta-value">UX Strategy · Branding · UI Design</span>
+        </div>
+        <div class="cs-hero-meta-item">
+          <span class="cs-hero-meta-label">Duration</span>
+          <span class="cs-hero-meta-value">2-Week Sprint</span>
+        </div>
+        <div class="cs-hero-meta-item">
+          <span class="cs-hero-meta-label">Status</span>
+          <span class="cs-hero-meta-value">Live in App Stores</span>
+        </div>
+      </div>
+
+      <p class="cs-hero-desc" data-animate="fade-up" data-delay="320">
+      Every year, thousands of ambitious students compete for <strong>a handful of spots</strong> at top consulting firms like <strong>McKinsey, BCG, and Bain.</strong>Traditional case prep costs <strong>$200/hour</strong> with a coach, takes <strong>45+ minutes</strong> per session, and requires a level of commitment most students can't sustain. <strong>Micro-casing flips that: 400-second gamified case studies</strong> that build the same decision-making muscle,<strong> at an accessible price point,<br></strong>on your <strong>commute.</strong></br>
+      </p>
+
+      <a href="https://apps.apple.com/gb/app/micro-casing/id6754453873" target="_blank" class="btn-ghost magnetic"
+        data-animate="fade-up" data-delay="400">
+        View live product ↗
+      </a>
+
+      <div class="cs-hero-image" data-animate="fade-up" data-delay="480">
+        <img src="assets/Micro-casing-Hero-Project-01.png" alt="Micro-casing App" class="cs-hero-img" loading="eager" decoding="async" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── THE CHALLENGE ── -->
+  <section class="cs-section" data-animate="fade-up">
+    <div class="cs-inner">
+      <div class="cs-two-col--6040 cs-two-col">
+        <div class="cs-col-head">
+          <span class="cs-eyebrow">The Challenge</span>
+          <h2 class="cs-heading">
+            Defining the<br /><em>Product System<br />and Brand Guide</em>
+          </h2>
+          <a href="#approach" class="btn-ghost magnetic small" style="margin-top: clamp(28px, 4vw, 48px); display: inline-block;">See the approach →</a>
+        </div>
+        <div class="cs-col-body">
+          <p>
+            Micro-casing had been structured using AI-generated wireframes and built by an engineering team
+            <strong>without a dedicated design system</strong>. The Figma file lacked
+            <strong>component logic, prototype flows, and scalable navigation</strong>, making it impossible to
+            evaluate the full user experience.
+          </p>
+          <p>
+            The interface suffered from <strong>fragmented visual hierarchy, misaligned UX copy, and no global
+            navigation architecture</strong>. As the case library expanded weekly, the product became
+            <strong>structurally unsustainable</strong>. Users had no orientation, no progress tracking, and no
+            clear path through the experience.
+          </p>
+          <p>
+            The initial brief focused on visual redesign. Discovery revealed a deeper need: the product lacked a
+            strategic and structural foundation. Defining the product system and brand identity became the priority
+            before any visual decision was made.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── APPROACH ── -->
+  <section class="cs-section cs-section--dark" id="approach" data-animate="fade-up">
+    <div class="cs-inner">
+      <div class="cs-two-col--6040 cs-two-col">
+        <div class="cs-col-head">
+          <span class="cs-eyebrow">The Approach</span>
+          <h2 class="cs-heading">
+            Strategy First<br />Design<br /><em>Second</em>
+          </h2>
+        </div>
+        <div class="cs-col-body">
+          <p>
+            Before opening Figma, I ran a <strong>structured brand and UX discovery process</strong>. Through a
+            questionnaire and founder alignment session, I clarified business ambition, target audience positioning,
+            and long-term scalability goals.
+          </p>
+          <p>
+            A full UX/UI audit mapped every friction point across the existing flows:
+            <strong>fragmented hierarchy, invisible navigation, misaligned copy, and cognitive overload</strong>
+            at critical user journey moments.
+          </p>
+          <p>
+            Drawing on Duolingo and Elevate as references, we defined three brand pillars to guide every visual and
+            tonal decision: <strong>Professional</strong>, <strong>Friendly</strong>, and <strong>Modern</strong>.
+            This foundation, not aesthetic preference, drove every design decision in the 2-week sprint.
+          </p>
+        </div>
+      </div>
+
+      <div class="cs-process">
+        <div class="cs-process-step">
+          <span class="cs-process-num">01 — Discover</span>
+          <div class="cs-process-title">Strategic Discovery</div>
+          <div class="cs-process-tools">Brand questionnaire · UX/UI Audit · Founder alignment</div>
+        </div>
+        <div class="cs-process-step">
+          <span class="cs-process-num">02 — Define</span>
+          <div class="cs-process-title">Problem Framing</div>
+          <div class="cs-process-tools">4 structural failures · Brand pillars · Sprint scope</div>
+        </div>
+        <div class="cs-process-step">
+          <span class="cs-process-num">03 — Develop</span>
+          <div class="cs-process-title">System Building</div>
+          <div class="cs-process-tools">Moodboard · Branding · 50+ screens redesigned</div>
+        </div>
+        <div class="cs-process-step">
+          <span class="cs-process-num">04 — Deliver</span>
+          <div class="cs-process-title">Handoff Ready</div>
+          <div class="cs-process-tools">Mini UI Kit · Prototype · Developer documentation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── THE RESULTS ── -->
+  <section class="cs-section" data-animate="fade-up">
+    <div class="cs-inner">
+      <div class="cs-two-col cs-two-col--4060">
+        <div class="cs-results-list">
+          <div class="cs-result-item">
+            <span class="cs-result-num">01</span>
+            <p class="cs-result-text">Full UX/UI audit identifying <strong>4 structural failures</strong> blocking growth and retention</p>
+          </div>
+          <div class="cs-result-item">
+            <span class="cs-result-num">02</span>
+            <p class="cs-result-text">Brand strategy defined: <strong>Professional, Friendly, and Modern</strong>, with the Casey mascot introduced to reduce user intimidation</p>
+          </div>
+          <div class="cs-result-item">
+            <span class="cs-result-num">03</span>
+            <p class="cs-result-text"><strong>50+ screens redesigned</strong> from the ground up, including global navigation, filtering system, and profile architecture</p>
+          </div>
+          <div class="cs-result-item">
+            <span class="cs-result-num">04</span>
+            <p class="cs-result-text"><strong>Mini UI Kit delivered</strong>: component library, corporate colours, typography system, and iconography</p>
+          </div>
+          <div class="cs-result-item">
+            <span class="cs-result-num">05</span>
+            <p class="cs-result-text"><strong>High-fidelity interactive prototype</strong> covering 8 complete flows, ready for developer implementation</p>
+          </div>
+          <div class="cs-result-item">
+            <span class="cs-result-num">06</span>
+            <p class="cs-result-text"><strong>Scalable content architecture</strong>: filtering by difficulty, category, and new releases supports long-term library growth</p>
+          </div>
+        </div>
+
+        <div>
+          <span class="cs-eyebrow">What We Delivered</span>
+          <h2 class="cs-heading">
+            From AI Wireframes<br />to a<br /><em>Scalable System</em>
+          </h2>
+          <div class="cs-col-body">
+            <p>
+              The inherited Figma file had been structured by Shankar using Google Stitch and built by his engineering
+              team. It lacked a component library, prototype logic, and a consistent visual system.
+            </p>
+            <p>
+              Rather than starting from scratch, I used the existing structure as a foundation and rebuilt the interface
+              systematically, introducing components, interaction logic, and a
+              <strong>cohesive visual language across 50+ screens</strong>.
+            </p>
+            <p>
+              The platform has reached an initial milestone of <strong>75 active users</strong> as of January 2026.
+              A 90-day post-launch evaluation period will begin once the redesign is fully implemented in production.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIAL ── -->
+  <section class="cs-testimonial" data-animate="fade-up">
+    <span class="cs-quote-mark">"</span>
+    <p class="cs-quote-text">
+      "I worked with Juan for my app's (Micro-casing) UX,UI design. Juan was very thorough and very professional, and I had a great time working with him. His discipline in learning about the customer journey in the industry related to the app was very much appreciated."
+    </p>
+    <div class="cs-quote-attr">Shankar Ananth, CEO, Cerebral Games · Former McKinsey and Bain Consultant</div>
+  </section>
+
+  <!-- ── BEFORE & AFTER ── -->
+  <section class="cs-section cs-section--alt" data-animate="fade-up">
+    <div class="cs-inner">
+      <span class="cs-eyebrow">Before & After</span>
+      <h2 class="cs-heading">
+        From Fragmented<br /><em>to Focused</em>
+      </h2>
+
+      <div class="cs-ba-frames">
+        <div>
+          <p class="cs-ba-label">Before: AI-generated wireframes</p>
+          <div class="cs-ba-img">
+            <img src="assets/Before-Foto-00.webp" alt="Before: original Micro-casing interface" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+        </div>
+        <div>
+          <p class="cs-ba-label">After: Redesigned experience</p>
+          <div class="cs-ba-img">
+            <img src="assets/After-Foto_1.webp" alt="After: redesigned Micro-casing interface" style="width:100%;height:100%;object-fit:cover;display:block;" />
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-ba-lists">
+        <div class="cs-ba-list">
+          <h3>What was not working</h3>
+          <ul>
+            <li><span class="cs-ba-icon cs-ba-icon--x">✕</span><span class="cs-ba-item-content"><strong>Fragmented visual hierarchy</strong>: creating cognitive overload across all screens</span></li>
+            <li><span class="cs-ba-icon cs-ba-icon--x">✕</span><span class="cs-ba-item-content"><strong>No global navigation</strong>: users trapped in a single forced flow with no orientation</span></li>
+            <li><span class="cs-ba-icon cs-ba-icon--x">✕</span><span class="cs-ba-item-content"><strong>Misaligned UX copy</strong>: mixing gaming tone with consulting prep context</span></li>
+            <li><span class="cs-ba-icon cs-ba-icon--x">✕</span><span class="cs-ba-item-content"><strong>No filtering or discovery system</strong>: unsustainable as the content library grew</span></li>
+            <li><span class="cs-ba-icon cs-ba-icon--x">✕</span><span class="cs-ba-item-content"><strong>No component library</strong>: no foundation for consistent or scalable development</span></li>
+          </ul>
+        </div>
+        <div class="cs-ba-list">
+          <h3>What we improved</h3>
+          <ul>
+            <li><span class="cs-ba-icon cs-ba-icon--check">✓</span><span class="cs-ba-item-content"><strong>Cohesive visual system</strong>: unified typography, hierarchy, and colour across all screens</span></li>
+            <li><span class="cs-ba-icon cs-ba-icon--check">✓</span><span class="cs-ba-item-content"><strong>Global navigation bar</strong>: Office, Cases, New Cases, Favorites, and Profile always accessible</span></li>
+            <li><span class="cs-ba-icon cs-ba-icon--check">✓</span><span class="cs-ba-item-content"><strong>Tone-aligned UX copy</strong>: Professional, Friendly, and Modern across every touchpoint</span></li>
+            <li><span class="cs-ba-icon cs-ba-icon--check">✓</span><span class="cs-ba-item-content"><strong>Filtering system</strong>: by difficulty, category, and new releases supports content scaling</span></li>
+            <li><span class="cs-ba-icon cs-ba-icon--check">✓</span><span class="cs-ba-item-content"><strong>Mini UI Kit</strong>: component library ready for immediate developer implementation</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DISCOVERY METHODS ── -->
+  <section class="cs-section cs-section--dark" data-animate="fade-up">
+    <div class="cs-inner">
+      <span class="cs-eyebrow">01 — Discover</span>
+      <h2 class="cs-heading">
+        Three Workstreams<br /><em>One Foundation</em>
+      </h2>
+      <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 8px;">
+        Three parallel workstreams ran simultaneously to establish a <strong>strategic foundation</strong> before
+        any design decision was made.
+      </p>
+
+      <div class="cs-pillars">
+        <div class="cs-pillar">
+          <span class="cs-pillar-num">01 — Brand & Product Questionnaire</span>
+          <div class="cs-pillar-title">Founder Alignment</div>
+          <div class="cs-pillar-body">A structured alignment session with the founder to define
+            <strong>vision, target audience, tone, and competitive positioning</strong> before opening Figma.</div>
+          <a href="https://www.notion.so/Discovery-Questionnaire-Micro-Casing-App-Case-2ec0f72674e48086bb8bf6199c76c27e"
+            target="_blank" class="cs-pillar-link">View questionnaire ↗</a>
+        </div>
+        <div class="cs-pillar">
+          <span class="cs-pillar-num">02 — Founder Vision</span>
+          <div class="cs-pillar-title">Product Purpose</div>
+          <div class="cs-pillar-body">Shankar Ananth built Micro-casing to address a gap he experienced firsthand during
+            consulting interview preparation. Understanding that context shaped every strategic decision.</div>
+        </div>
+        <div class="cs-pillar">
+          <span class="cs-pillar-num">03 — UX / UI Audit</span>
+          <div class="cs-pillar-title">Structural Diagnosis</div>
+          <div class="cs-pillar-body">Systematic review of existing screens to identify
+            <strong>hierarchy failures, navigation gaps, cognitive overload points, and scalability blockers</strong>
+            across the full user journey.</div>
+          <a href="https://drive.google.com/file/d/1083O2rGdC5Mwhxh2M-EWMtqUtvRZoksD/view?usp=sharing" target="_blank"
+            class="cs-pillar-link">View full audit ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── METRICS ── -->
+  <section class="cs-section" data-animate="fade-up">
+    <div class="cs-inner">
+      <span class="cs-eyebrow">Live Metrics</span>
+      <h2 class="cs-heading">
+        Results Since<br /><em>February 2026</em>
+      </h2>
+      <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 8px;">
+        The redesign launched in February 2026 across the App Store and Google Play. The following metrics reflect real performance data from both platforms since release.
+      </p>
+
+      <div class="cs-metrics">
+        <div class="cs-metric-card">
+          <span class="cs-metric-num">237</span>
+          <div class="cs-metric-title">First-Time Downloads</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Platform</span> App Store, since February 2026</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Growth</span> +508% increase in new user acquisitions</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Signal</span> Redesigned store presence improved discovery and install intent</div>
+        </div>
+        <div class="cs-metric-card">
+          <span class="cs-metric-num">38</span>
+          <div class="cs-metric-title">Monthly Active Users</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Platform</span> Google Play, last 28 days</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Growth</span> +65% MAU growth; 57 active devices, +25%</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Signal</span> Redesigned experience supports recurring engagement</div>
+        </div>
+        <div class="cs-metric-card">
+          <span class="cs-metric-num">2.84%</span>
+          <div class="cs-metric-title">Download-to-Paid Rate</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Window</span> Day 35 post-download conversion</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Growth</span> 8 active subscription plans, +700% since launch</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Signal</span> Freemium onboarding drives measurable revenue conversion</div>
+        </div>
+        <div class="cs-metric-card">
+          <span class="cs-metric-num">$78</span>
+          <div class="cs-metric-title">App Store Proceeds</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Detail</span> 17 in-app purchases; MRR $24 with 2 paid plans active</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Growth</span> +7.7K% revenue growth since February 2026</div>
+          <div class="cs-metric-row"><span class="cs-metric-label">Signal</span> Early monetization validates the product value proposition</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LESSONS LEARNED ── -->
+  <section class="cs-section cs-section--dark" data-animate="fade-up">
+    <div class="cs-inner">
+      <span class="cs-eyebrow">Lessons Learned</span>
+      <h2 class="cs-heading">
+        What This Project<br /><em>Taught Me</em>
+      </h2>
+
+      <div class="cs-lessons">
+        <div class="cs-lesson">
+          <span class="cs-lesson-num">01</span>
+          <div class="cs-lesson-title">UX Leads, UI Follows</div>
+          <div class="cs-lesson-body">Flows can always evolve and improve. Visual identity, once defined, becomes the
+            <strong>stable foundation</strong> everything else builds on.</div>
+        </div>
+        <div class="cs-lesson">
+          <span class="cs-lesson-num">02</span>
+          <div class="cs-lesson-title">Human Direction Makes AI Meaningful</div>
+          <div class="cs-lesson-body">AI accelerated exploration and iteration, but every
+            <strong>strategic and creative decision</strong> required human judgment to be meaningful.</div>
+        </div>
+        <div class="cs-lesson">
+          <span class="cs-lesson-num">03</span>
+          <div class="cs-lesson-title">Communication Is a Design Deliverable</div>
+          <div class="cs-lesson-body"><strong>Structured documentation and clear client communication</strong> were as
+            critical as the design itself. Without them, even great work loses direction.</div>
+        </div>
+        <div class="cs-lesson">
+          <span class="cs-lesson-num">04</span>
+          <div class="cs-lesson-title">Prototype Early, Prototype Always</div>
+          <div class="cs-lesson-body">Prototyping was the single most effective way to
+            <strong>validate decisions, communicate intent, and reduce misalignment</strong> with the development team.</div>
+        </div>
+        <div class="cs-lesson">
+          <span class="cs-lesson-num">05</span>
+          <div class="cs-lesson-title">Workflow Is Efficiency</div>
+          <div class="cs-lesson-body">Defining a <strong>clear personal workflow</strong> before starting saved time,
+            reduced errors, and kept the project moving within a strict two-week sprint.</div>
+        </div>
+        <div class="cs-lesson">
+          <span class="cs-lesson-num">06</span>
+          <div class="cs-lesson-title">AI Is Not a Trend, It Is Infrastructure</div>
+          <div class="cs-lesson-body">AI tools are now standard infrastructure. Using them effectively is a
+            <strong>baseline professional expectation</strong>, not a differentiator.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECT GALLERY ── -->
+  <section class="cs-section cs-section--dark" data-animate="fade-up">
+    <div class="cs-inner">
+      <span class="cs-eyebrow">Project Gallery</span>
+      <h2 class="cs-heading">
+        From Wireframes<br>to <em>Final Screens</em>
+      </h2>
+    </div>
+
+    <div class="cs-carousel-wrap">
+      <div class="cs-carousel-track" id="carouselTrack">
+
+        <!-- Image 1 -->
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-01.webp" alt="Screen 01" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <!-- Image 2 -->
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-02.webp" alt="Screen 02" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <!-- Video 1 — Prototype Happy Flow -->
+        <div class="cs-carousel-item cs-carousel-item--video">
+          <div class="cs-carousel-video-inner">
+            <video
+              src="assets/Happy-Flow-MCA-00.mp4"
+              autoplay loop muted playsinline
+              style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;"
+            ></video>
+          </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-03_1.webp" alt="Screen 03" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <!-- Image 4 -->
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-04_1.webp" alt="Screen 04" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <!-- Video 2 — Prototype Error Flow -->
+        <div class="cs-carousel-item cs-carousel-item--video">
+          <div class="cs-carousel-video-inner">
+            <video
+              src="assets/Error-Flow-MCA.mp4"
+              autoplay loop muted playsinline
+              style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;"
+            ></video>
+          </div>
+        </div>
+        <!-- Image 5 -->
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-05_1.webp" alt="Screen 05" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <!-- Image 6 -->
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-06_1.webp" alt="Screen 06" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+
+        <!-- Duplicate set for seamless infinite loop -->
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-01.webp" alt="Screen 01" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-02.webp" alt="Screen 02" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="cs-carousel-item cs-carousel-item--video">
+          <div class="cs-carousel-video-inner">
+            <video
+              src="assets/Happy-Flow-MCA-00.mp4"
+              autoplay loop muted playsinline
+              style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;"
+            ></video>
+          </div>
+        </div>
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-03_1.webp" alt="Screen 03" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-04_1.webp" alt="Screen 04" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="cs-carousel-item cs-carousel-item--video">
+          <div class="cs-carousel-video-inner">
+            <video
+              src="assets/Error-Flow-MCA.mp4"
+              autoplay loop muted playsinline
+              style="width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;"
+            ></video>
+          </div>
+        </div>
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-05_1.webp" alt="Screen 05" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div class="cs-carousel-item cs-carousel-item--img">
+          <img src="assets/Screen-06_1.webp" alt="Screen 06" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+
+      </div><!-- /track -->
+    </div><!-- /wrap -->
+  </section>
+
+  <style>
+    /* ── Carousel ─────────────────────────────── */
+    .cs-carousel-wrap {
+      overflow: hidden;
+      width: 100%;
+      padding: 48px 0 0;
+      cursor: grab;
+      user-select: none;
+      -webkit-user-select: none;
+      /* Soft fade at both edges — items visible the whole time, no hard clip */
+      -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0px,
+        black 140px,
+        black calc(100% - 140px),
+        transparent 100%
+      );
+      mask-image: linear-gradient(
+        to right,
+        transparent 0px,
+        black 140px,
+        black calc(100% - 140px),
+        transparent 100%
+      );
+    }
+    .cs-carousel-wrap.is-dragging { cursor: grabbing; }
+    .cs-carousel-track {
+      display: flex;
+      gap: 16px;
+      width: max-content;
+      will-change: transform;
+    }
+    .cs-carousel-item--img {
+      width: clamp(280px, 30vw, 480px);
+      aspect-ratio: 4 / 3;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .cs-carousel-placeholder {
+      width: 100%; height: 100%;
+      background: var(--bg-3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--text-3);
+    }
+    .cs-carousel-item--video {
+      width: clamp(160px, 16vw, 260px);
+      aspect-ratio: 440 / 830;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .cs-carousel-video-inner {
+      width: 100%; height: 100%;
+      background: var(--bg);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .cs-carousel-video-placeholder {
+      display: flex; flex-direction: column; align-items: center; gap: 12px;
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--text-3);
+    }
+    .cs-carousel-play {
+      font-size: 1.6rem;
+      background: var(--btn-gradient);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
+
+  <script>
+    (function () {
+      const wrap  = document.querySelector('.cs-carousel-wrap');
+      const track = document.getElementById('carouselTrack');
+      if (!wrap || !track) return;
+
+      let x = 0, vel = 0, speed = 0.6;
+      let paused = false, dragging = false;
+      let dragLastX = 0, lastTime = 0;
+
+      function getHalfWidth() { return track.scrollWidth / 2; }
+
+      function tick(ts) {
+        const dt = Math.min(ts - lastTime, 50);
+        lastTime = ts;
+        if (!dragging) {
+          if (!paused) {
+            x -= speed * (dt / 16.67);
+          } else {
+            x += vel;
+            vel *= 0.92;
+            if (Math.abs(vel) < 0.05) vel = 0;
+          }
+        }
+        const half = getHalfWidth();
+        if (x <= -half) x += half;
+        if (x > 0)      x -= half;
+        track.style.transform = `translateX(${x}px)`;
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame((ts) => { lastTime = ts; requestAnimationFrame(tick); });
+
+      wrap.addEventListener('mouseenter', () => { paused = true; });
+      wrap.addEventListener('mouseleave', () => { paused = false; vel = 0; });
+
+      wrap.addEventListener('mousedown', (e) => {
+        dragging = true; paused = true;
+        dragLastX = e.clientX; vel = 0;
+        wrap.classList.add('is-dragging');
+        e.preventDefault();
+      });
+      window.addEventListener('mousemove', (e) => {
+        if (!dragging) return;
+        const dx = e.clientX - dragLastX;
+        x += dx; vel = dx; dragLastX = e.clientX;
+      });
+      window.addEventListener('mouseup', () => {
+        if (!dragging) return;
+        dragging = false; paused = false;
+        wrap.classList.remove('is-dragging');
+      });
+
+      let touchLastX = 0;
+      wrap.addEventListener('touchstart', (e) => {
+        dragging = true; paused = true;
+        touchLastX = e.touches[0].clientX; vel = 0;
+      }, { passive: true });
+      wrap.addEventListener('touchmove', (e) => {
+        if (!dragging) return;
+        const dx = e.touches[0].clientX - touchLastX;
+        x += dx; vel = dx; touchLastX = e.touches[0].clientX;
+      }, { passive: true });
+      wrap.addEventListener('touchend', () => { dragging = false; paused = false; });
+    })();
+  </script>
+
+  <!-- ── PROJECT LINKS ── -->
+  <section class="cs-section" data-animate="fade-up">
+    <div class="cs-inner">
+      <span class="cs-eyebrow">Sources & Links</span>
+      <h2 class="cs-heading">
+        Explore the<br /><em>Full Work</em>
+      </h2>
+      <div class="cs-links-grid">
+        <a href="https://www.notion.so/Discovery-Questionnaire-Micro-Casing-App-Case-2ec0f72674e48086bb8bf6199c76c27e"
+          target="_blank" class="cs-link-btn magnetic">Discovery Questionnaire ↗</a>
+        <a href="https://www.linkedin.com/in/shankarananth8/" target="_blank" class="cs-link-btn magnetic">Shankar Ananth on LinkedIn ↗</a>
+        <a href="https://apps.apple.com/gb/app/micro-casing/id6754453873" target="_blank"
+          class="cs-link-btn magnetic">App Store ↗</a>
+        <a href="https://play.google.com/store/apps/details?id=com.microcasing.dev" target="_blank"
+          class="cs-link-btn magnetic">Google Play ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MORE WORK ── (commented out — content pending)
+  <section class="cs-section cs-section--dark" data-animate="fade-up">
+    <div class="cs-inner">
+      <span class="cs-eyebrow">More Work</span>
+      <h2 class="cs-heading">
+        You might also<br /><em>like these.</em>
+      </h2>
+      <div class="cs-more-grid">
+        <a href="#" class="cs-more-card">
+          <div class="cs-more-img" style="background:linear-gradient(135deg,#0d0d0d,#1a0533,#2d1b69);">SUPPLY PRO</div>
+          <div class="cs-more-info">
+            <div class="cs-more-pills">
+              <span class="cs-more-pill">SaaS</span>
+              <span class="cs-more-pill">B2B</span>
+              <span class="cs-more-pill">Product Design</span>
+            </div>
+            <h3 class="cs-more-title">Supply Pro</h3>
+            <div class="cs-more-cta">View case study →</div>
+          </div>
+        </a>
+        <a href="index.html#footer" class="cs-more-card">
+          <div class="cs-more-img" style="background:linear-gradient(135deg,#0a0a0a,#1c2341,#2d3561);">JGV.</div>
+          <div class="cs-more-info">
+            <div class="cs-more-pills">
+              <span class="cs-more-pill">Branding</span>
+              <span class="cs-more-pill">Identity</span>
+            </div>
+            <h3 class="cs-more-title">Let's work together</h3>
+            <div class="cs-more-cta">Get in touch →</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer" id="footer">
+    <canvas class="footer-dot-canvas" id="footerDotGrid"></canvas>
+    <div class="footer-top">
+      <div class="footer-cta" data-animate="fade-up">
+        <p class="footer-cta-label"><span class="eyebrow-dot"></span>Ready to work together?</p>
+        <h2 class="footer-cta-title">Let's connect dots<br /><span class="gradient-word">to create.</span></h2>
+        <a href="mailto:juangomezvara@gmail.com" class="btn-primary magnetic large">
+          <span class="btn-text">Contact</span>
+          <span class="btn-arrow">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- <div class="footer-graphic" aria-hidden="true">
+      <span class="footer-big-text" data-text="DESIGN">DESIGN</span>
+    </div> -->
+    <div class="footer-bottom">
+      <div class="footer-info">
+        <span class="footer-logo">JGV<span class="logo-dot">.</span></span>
+        <span class="footer-copy">© 2026 JGV, all rights reserved</span>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/juan-gomez-vara-0b409470/" target="_blank" rel="noopener" class="social-link magnetic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://medium.com/@juangomezvara" target="_blank" rel="noopener" class="social-link magnetic">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.285 7.269a.733.733 0 0 0-.24-.619L2.275 4.517v-.32h5.498l4.25 9.32 3.736-9.32H21v.319l-1.515 1.453a.44.44 0 0 0-.168.425v10.666a.44.44 0 0 0 .168.425l1.479 1.453v.319h-7.436v-.319l1.53-1.489c.152-.15.152-.194.152-.424V8.401l-3.994 10.137h-.575L5.417 8.401v6.793c-.041.305.07.612.3.833l1.99 2.415v.32H2.003v-.32l1.99-2.415c.227-.22.333-.53.292-.832z"/></svg>
+          <span>Medium</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
